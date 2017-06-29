@@ -64,11 +64,9 @@ namespace HarkDev.CocosSharp.CCSpawn
                 // Animacion que hace rotar mi nodo por el tiempo definido, a un angulo de 360 grados.
                 CCRotateBy rotacion = new CCRotateBy(duracion, 360);
 
-                // Objeto que ejecuta ambias animaciones a la vez.
-
                 // El uso de global permite que mi compilador no se confunda entre el namespace de mi proyecto y el de CocosSharp
                 // Creo el objeto CCSpawn, pasandole las animaciones que quiero ejecutar.
-                global::CocosSharp.CCSpawn spawn = new global::CocosSharp.CCSpawn(escalar, rotacion);
+                global::CocosSharp.CCSpawn spawn = new CocosSharp.CCSpawn(escalar, rotacion);
 
                 //Ejecuto las animaciones en el label.
                 label.RunAction(spawn);
